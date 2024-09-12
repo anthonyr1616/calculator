@@ -4,7 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="displayArea">
+        <input id="operatorDisplay" type="text" value="" readonly="readonly" />
+        <input id="numberDisplay" type="text" readonly="readonly" />
+      </div>
+      <div class="buttons">
+        <div id="row1" class="row">
+          <button id="allClear">AC</button>
+          <button id="clear">C</button>
+          <button id="toggleNegative">+/-</button>
+          <button class="operator" value="/">/</button>
+        </div>
+        <div id="row2" class="row">
+          <button class="number" value="7">7</button>
+          <button class="number" value="8">8</button>
+          <button class="number" value="9">9</button>
+          <button class="operator" value="*">*</button>
+        </div>
+        <div id="row3" class="row">
+          <button class="number" value="4">4</button>
+          <button class="number" value="5">5</button>
+          <button class="number" value="6">6</button>
+          <button class="operator" value="-">-</button>
+        </div>
+        <div id="row4" class="row">
+          <button class="number" value="1">1</button>
+          <button class="number" value="2">2</button>
+          <button class="number" value="3">3</button>
+          <button class="operator" value="+">+</button>
+        </div>
+        <div id="row5" class="row">
+          <button id="zero" class="number" value="0">0</button>
+          <button id="decimal">.</button>
+          <button id="equalsButton">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

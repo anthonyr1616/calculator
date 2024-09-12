@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #023047;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #8ecae6;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 20px;
+  height: 800px;
+  width: 800px;
+}
+
+.displayArea {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  height: 70px; 
+  font-size: 65px;
+  text-align: end;
+}
+
+#numberDisplay {
+  width: 92%;
+  border-left: none;
+}
+
+#operatorDisplay {
+  width: 8%;
+  border-right: none;
+  text-align: start;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+button {
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  width: 25%;
+  height: 100%;
+  font-size: 75px;
+  border-radius: 25px;
+}
+
+.number {
+  background-color: #13293d;
+}
+
+.number:active,
+.operator:active,
+#allClear:active,
+#toggleNegative:active,
+#clear:active,
+#decimal:active,
+#equalsButton:active {
+  background-color: #fb8500;
+}
+
+.operator {
+  background-color: #16324f;
+}
+
+#allClear,
+#toggleNegative,
+#clear,
+#decimal {
+  background-color: #3e92cc;
+}
+
+#equalsButton {
+  background-color: #ffb703;
+}
+
+#zero {
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  height: 20%;
+}
